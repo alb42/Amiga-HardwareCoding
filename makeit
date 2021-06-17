@@ -1,0 +1,11 @@
+Failat 21
+delete #?.ppu #?.o #?.s hello >nil:
+Failat 1
+
+bin/ppc68k -viw -l -B -n -Fuunits -Tamiga -Os4 -Cp68020 -Avasm -XV  copper.pas
+bin/ppc68k -viw -l -B -n -Fuunits -Tamiga -Os4 -Cp68020 -Avasm -XV  sinus.pas
+
+bin/strip copper
+bin/strip sinus
+
+list copper sinus
